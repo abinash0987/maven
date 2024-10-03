@@ -2,7 +2,7 @@ node('built-in')
 {
     stage('ContineousDownloads') 
     {
-      git 'https://github.com/intelliqittrainings/maven.git'
+      git 'https://github.com/abinash0987/maven.git'
       
     }
     stage('continuousBuild')
@@ -15,7 +15,8 @@ node('built-in')
     }
    stage('continuousTesting')
     {
-        git'https://github.com/intelliqittrainings/FunctionalTesting.git'
+        git'https://github.com/abinash0987/maven.git'
+      
         sh 'java -jar /var/lib/jenkins/workspace/scriptedpipeline1/testing.jar'
     }
     stage('continuousDelivery')
