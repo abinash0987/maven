@@ -16,7 +16,6 @@ node('built-in')
    stage('continuousTesting')
     {
         git'https://github.com/abinash0987/maven.git'
-      
         sh 'java -jar /var/lib/jenkins/workspace/scriptedpipeline1/testing.jar'
     }
     stage('continuousDelivery')
